@@ -51,3 +51,25 @@ const fun=function(){
 }
 
 console.log(typeof fun)// function object
+
+//-------------------------------memory-----
+
+//Stack Memory(Primitive)..variable ka copy milta hai
+//Heap(Non-Primitive)..refernce milta hai(actually changes original value mai he hoti hai)
+
+let name="Placed Tanya"
+let name2=name
+name2="Tanya"
+console.log(name2)
+console.log(name)
+
+
+let user={
+    email:"tanya.com",
+    upi:123
+}
+
+let user2=user
+ user2.email="tannu.com"
+ console.log(user.email)
+ console.log(user2.email)
