@@ -1,6 +1,5 @@
-let score=null;
-// console.log(typeof score);
-
-// let valueNumber=Number(score);
-// console.log(typeof valueNumber)
-// console.log(valueNumber)
+// const chai=()=>{
+//     let user="tanya"
+//     console.log(this.user)//undefined
+// }
+// chai()

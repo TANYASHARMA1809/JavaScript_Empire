@@ -1,0 +1,23 @@
+//Immediately Invoked Function Expressions(IIFE)
+
+(function job(){
+    console.log(`db connected`)
+})();// terminate krne k liye yha semicolon jarurui hai,agle function ko chlane k liye
+
+//global scope k pollution se problem hoti hai
+//usse bachne k liye IIFE ka use krte hai
+
+((name)=>{
+    console.log(`Another IIFE ${name} `)
+})("tanyaaa")
+
+//falsy value
+// false, 0, -0, BigInt 0n,"", null, undefined, NaN
+
+//truthy value
+//"0", 'false', " ",[], {} , function(){}
+
+
+//Nullish Coalescing Operatir (??) :null undefined
+
+//Terniary Operator..condition ? true:false
