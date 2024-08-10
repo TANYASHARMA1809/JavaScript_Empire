@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM learning <span style="display: none;">I am hidden text</span> </h1>
+        <p>Lorem ipsum, dolor sit amet 
+        </p>
+    </div>
+    
+</body>
+</html>
+
+<!-- 
+console.log(yh sb krane pr chain milti jayegi)
+window
+document
+html
+head,body
+head ->title ->text node
+head -> meta -> attribute
+body -> div -> h1,p
+
+-->
+
+<!-- 
+Document selector 
+1. const title=document.getElementById()
+                           .id, .className, .getAttribute('class'), .setAttribute('class','test')
+                           title.innerText = shows the text which actually displays on browser
+                           title.textContent = shows all the text which is completly written inside html file, some text is hidden in html file by display:.that nonetext is also visible by textContent
+                           title.innerHTML = shows the text as well as html written between text
+
+2. const h=document.getElementByClassName() =return HTML collection[],we convert it to array by "Array.from(h)"
+
+3. document.querySelector('h1') = gives the first h1 in document,all css element is selected by this
+
+4. document.querySelector('#title') = gives the specific id element
+
+5. document.querySelector('.heading') =gives class element..return Node List[]
+
+6. document.querySelectorAll('h1') =gives all the h1
+
+
+-->

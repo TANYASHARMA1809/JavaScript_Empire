@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: #fff;">
+    <ul class="language">
+        <li>Java</li>
+    </ul>
+</body>
+<script>
+    function add(name){
+        const li=document.createElement('li')
+        li.innerHTML=`${name}`
+        document.querySelector('.language').appendChild(li)
+    }
+    add("python")
+    add("js")
+
+    function addOptimise(name){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(name))
+        document.querySelector('.language').appendChild(li)
+        
+    }
+    addOptimise('golang')
+
+    //edit
+
+    const second=document.querySelector('li:nth-child(2)')
+   // second.innerHTML="typescript"
+   const newli=document.createElement('li')
+   newli.textContent="typescript"
+   second.replaceWith(newli)
+
+
+   const first=document.querySelector('li:first-child')
+   console.log(first)
+   first.outerHTML='<li>type</li>'
+
+   //remove
+
+   const last=document.querySelector('li:last-child')
+   lasr.remove()
+
+
+
+</script>
+</html>
