@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>events</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    //setTimeOut is method which calls APIs
+    //setTimeout have handlers and time
+    //setTimeOut 1 br he execute hoga..mtlb jo bhi function hai usko given time pr 1 br chla dega fr timeout hojega
+    
+    const say=function(){
+        console.log("Tanya")
+    }
+    const change=function(){
+        document.querySelector('h1').innerHTML="Js series"
+    }
+  
+    //setTimeout(say,2000)
+
+    const a=setTimeout(change,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(a)
+        console.log("Stopped settimeout")
+    })
+
+</script>
+</html>
